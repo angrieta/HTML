@@ -82,3 +82,8 @@ HTML & CSS
 <h6></h6>
 
 *p 단락(paragraph) - 제목의 내용 용도로 주로 사용합니다.
+
+
+## 파비콘 복붙용
+        <link rel="shortcut icon" href="이미지 경로 작성 위치" type="image/x-icon">
+        <link rel="icon" href="./image_video/images/detail_icon_wish.png" type="image/x-icon">
