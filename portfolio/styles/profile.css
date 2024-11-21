@@ -1,0 +1,25 @@
+.profile {}
+.profile h1 {
+    background-color: skyblue;
+    font-size: 2.50rem;
+}
+.profile .ambition_g {background-color: aqua;}
+.profile .ambition_g .ambition {}
+.profile .ambition_g .ambition em {}
+.profile .ambition_g .info {background-color: burlywood;}
+.profile .ambition_g .info li {}
+.profile .ambition_g h2 {}
+.profile .ambition_g .experience {background-color: brown;}
+.profile .ambition_g .experience li {}
+.profile .ambition_g .experience li span .date {}
+.profile .ambition_g .experience li span .name {}
+.profile .ambition_g .license {background-color: chocolate;}
+.profile .ambition_g .license li {}
+.profile .ambition_g .license li span .date {}
+.profile .ambition_g .license li span .name {}
+.profile .ambition_g .tool_title {background-color: chartreuse;}
+.profile .ambition_g .Tool {background-color: chartreuse;}
+.profile .ambition_g .Tool li {}
+.profile .ambition_g .Tool li span .photoshop {}
+.profile .ambition_g .Tool li span .ilust {}
+.profile .ambition_g .Tool li span .clipstudio {}
