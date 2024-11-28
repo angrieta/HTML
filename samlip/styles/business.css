@@ -1,37 +1,174 @@
 #wrap {}
-#wrap header h1 {}
+#wrap header {
+    background-color: yellow;
+}
+#wrap header h1 {display: inline-block;}
 #wrap header h1 a {}
-#wrap header h1 a img {}
+#wrap header h1 a img {display: inline-block;}
 #wrap header nav {}
-#wrap header nav ul {}
-#wrap header nav ul li {}
+#wrap header nav P {}
+#wrap header nav ul {
+    
+#wrap header nav ul li {display: inline-block;}
 #wrap header nav ul li a {}
-#wrap header .right_menu {}
+#wrap header .right_menu {
+    text-align:right;
+}
 #wrap header .right_menu a {}
 #wrap header .right_menu .right {}
 #wrap header .right_menu .right a {}
 #wrap header .right_menu .right a img {}
+#wrap main {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+#wrap main .path {
+    font-size: 0.875rem;
+    text-align:right;
+    margin-right: 80px;
+}
+#wrap main .path a {
+    color: #555;
+}
+#wrap main .path em {font-weight: 600; font}
+#wrap main .path img {margin: 0 12px; }
 #wrap main {}
-#wrap main .path {}
-#wrap main .path a {}
-#wrap main .path em {}
-#wrap main h1 {}
-#wrap main p {}
+#wrap main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 80px 0 25px 0;    
+    text-align: center;
+}
+#wrap main >p {
+    font-size: 1.1875rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 86px;
+}
 #wrap main .bg {}
-#wrap main .bg img {}
-#wrap main .bg .food_business {}
-#wrap main .bg .food_business h2{}
-#wrap main .bg .food_business p{}
-#wrap main .bg .store_business {}
-#wrap main .bg .store_business h2 {}
-#wrap main .bg .store_business p {}
-#wrap main .bg .concession_business h2 {}
-#wrap main .bg .concession_business p {}
-#wrap main .bg .service_business h2 {}
-#wrap main .bg .service_business p {}
-#wrap main .bg .export_business h2 {}
-#wrap main .bg .export_business p {}
-#wrap footer .ft_left
+#wrap main .bg .image {display: inline-block;}
+#wrap main .bg .contents {}
+#wrap main .bg .food_business {
+    width: 1140px; margin:0 auto;
+    padding-bottom: 132px;
+}
+#wrap main .bg .food_business .image img {}
+#wrap main .bg .food_business .contents {
+    display: inline-block;
+}
+#wrap main .bg .food_business .contents .deco_number {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:rgba(0,0,0,0.1);
+    letter-spacing: -0.5rem;
+    margin-bottom: -40px;
+}
+#wrap main .bg .food_business .contents .deco_number p {}
+#wrap main .bg .food_business .contents h2{
+    font-size: 1.875rem; font-weight: 600; margin: 28px 28px;
+}
+#wrap main .bg .food_business .contents p{
+    margin: 0 0 0 28px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#wrap main .bg .store_business {
+    width: 1140px; margin:0 auto;
+    padding-bottom: 132px;
+}
+#wrap main .bg .store_business .image img {}
+#wrap main .bg .store_business .contents  {
+    display: inline-block;
+}
+#wrap main .bg .store_business .contents .deco_number {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:rgba(0,0,0,0.1);
+    letter-spacing: -0.5rem;
+    margin-bottom: -40px;
+}
+#wrap main .bg .store_business .contents .deco_number p {}
+#wrap main .bg .store_business .contents h2 {
+    font-size: 1.875rem; font-weight: 600; margin: 28px 28px;
+}
+#wrap main .bg .store_business  .contents p {
+    margin: 0 0 0 28px; margin-right: 85px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#wrap main .bg .concession_business {
+    width: 1140px; margin:0 auto;
+    padding-bottom: 132px;
+}
+#wrap main .bg .concession_business .image img {}
+#wrap main .bg .concession_business .contents {
+    display: inline-block;
+}
+#wrap main .bg .concession_business .contents .deco_number {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:rgba(0,0,0,0.1);
+    letter-spacing: -0.5rem;
+    margin-bottom: -40px;
+}
+#wrap main .bg .concession_business .contents .deco_number p {}
+#wrap main .bg .concession_business .contents h2 {
+    font-size: 1.875rem; font-weight: 600; margin: 28px 28px;
+}
+#wrap main .bg .concession_business .contents p {
+    margin: 0 0 0 28px; margin-right: 85px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#wrap main .bg .service_business {
+    width: 1140px; margin:0 auto;
+    padding-bottom: 132px; 
+}
+#wrap main .bg .service_business .image img {}
+#wrap main .bg .service_business .contents {
+    display: inline-block;
+}
+#wrap main .bg .service_business .contents .deco_number {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:rgba(0,0,0,0.1);
+    letter-spacing: -0.5rem;
+    margin-bottom: -40px;
+}
+#wrap main .bg .service_business .contents .deco_number p {}
+#wrap main .bg .service_business .contents h2 {
+    font-size: 1.875rem; font-weight: 600; margin: 28px 28px; 
+}
+#wrap main .bg .service_business .contents p {
+    margin: 0 0 0 28px;     margin-right: 85px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#wrap main .bg .export_business {
+    width: 1140px; margin:0 auto;
+    padding-bottom: 132px;
+}
+#wrap main .bg .export_business .image img {}
+#wrap main .bg .export_business .contents {
+    display: inline-block;
+}
+#wrap main .bg .export_business .contents .deco_number {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:rgba(0,0,0,0.1);
+    letter-spacing: -0.5rem;
+    margin-bottom: -40px;
+}
+#wrap main .bg .export_business .contents .deco_number p {}
+#wrap main .bg .export_business .contents h2 {
+    font-size: 1.875rem; font-weight: 600; margin: 28px 28px;
+}
+#wrap main .bg .export_business .contents p {
+    margin: 0 0 0 28px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#wrap footer .ft_left {background-color: royalblue}
 #wrap footer .ft_left .ft_menu
 #wrap footer .ft_left .ft_menu a
 #wrap footer .ft_left .ft_menu a em
