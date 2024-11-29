@@ -1,0 +1,97 @@
+#wrap {
+    background-color: brown;
+}
+#wrap header {
+    background-color: rgba(0,0,0,0.1);
+    padding: 21px 80px;
+    /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
+    height: 80px;
+    
+}
+#wrap header h1 {
+    background-color: aqua;
+    float: left; padding-top: 3px;
+}
+#wrap header h1 a {}
+#wrap header h1 a img{
+}
+#wrap header nav {
+    background-color: coral;
+    float:right;
+}
+#wrap header nav ul {
+    overflow: hidden;
+}
+#wrap header nav ul li {
+    float:left; padding: 10px 0;
+    margin-right:80px;
+    
+}
+#wrap header nav ul li:nth-child(4) {
+    margin: 0; padding: 0;
+}#wrap header nav ul li:nth-child(4) a {
+    border: 1px solid #fff;
+    padding: 10px 20px;    
+    display: block;
+    border-radius: 25px;
+}
+#wrap header nav ul li a {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #fff;
+}
+/* =====================메인 1~4행 공통선택자 */
+#wrap main {
+    background-color: lime;
+}
+#wrap main .container {background-color: beige;}
+#wrap main .container .contents {
+    background-color: hotpink;
+}
+#wrap main .container .contents .text {
+    background-color: aqua;
+}
+#wrap main .container .contents .text h1 {}
+#wrap main .container .contents .text h1 span {}
+#wrap main .container .contents .text p {}
+/* =====================메인 1행 결제편리함 */
+#wrap main .pay {
+    background-image: url(../images/row1.jpg);
+}
+#wrap main .pay .contents {}
+#wrap main .pay .contents .text {}
+#wrap main .pay .contents .text > h1 {
+    margin: 231px 0 0 240px;
+    line-height: 1.3;
+}
+#wrap main .pay .contents .text h1 {
+    font-weight: 700; font-size: 4.375rem;
+    color: #fff;
+}
+#wrap main .pay .contents .text h1 span {
+    font-weight: 700; font-size: 4.375rem;
+    color: #5EE1FF;
+}
+#wrap main .pay .contents .text p {
+    font-size: 1.5625rem; font-weight: 500;
+    margin: 20px 0 0 231px;
+    line-height: 1.5;
+    color: #fff; 
+}
+#wrap main .pay .contents .text .bnr_btn_wrap {
+    background-color: purple;
+}
+#wrap main .pay .contents .text .bnr_btn_wrap .left {}
+#wrap main .pay .contents .text .bnr_btn_wrap .left img {}
+#wrap main .pay .contents .text .bnr_btn_wrap progress {}
+#wrap main .pay .contents .text .bnr_btn_wrap progress img{}
+#wrap main .pay .contents .text .bnr_btn_wrap .pause {}
+#wrap main .pay .contents .text .bnr_btn_wrap .pause img {}
+#wrap main .pay .contents .text .bnr_btn_wrap .next {}
+#wrap main .pay .contents .text .bnr_btn_wrap .next img{}
+#wrap main .pay .contents .scroll {
+    background-color: brown;
+}
+#wrap main .pay .contents .scroll span:nth-child(1) {}
+#wrap main .pay .contents .scroll .scroll_bg {}
+#wrap main .pay .contents .scroll .scroll_bg .bar {}

@@ -35,7 +35,11 @@
     font-weight: 600;
     font-size: 0.857rem;
 }
-#wrap main .path img{margin:0px 12px}
+#wrap main .path img{
+    margin:0px 12px;
+    position: relative;
+    top:3px
+}
 #wrap main h1 {
     margin:44px 0 49px 0;
     text-align: center;
@@ -114,9 +118,13 @@
 #wrap main .bg .goal_contents li:nth-child(2) span {color:#000}
 /* strategy_contents */
 #wrap main .bg .strategy_contents {
+    background-color: aqua;
+    width: max-content; margin:0 auto;
+    /*     display: inline-block; */
 }
+#wrap main .bg .strategy_contents::after {clear:both; display:block; content:'';}
 #wrap main .bg .strategy_contents dl {
-    display: inline-block;
+    float: left;
     border-radius: 50%;
     width:180px; height:180px;
     background-color: #EEEEEE;
