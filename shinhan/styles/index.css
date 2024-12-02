@@ -1,22 +1,19 @@
-#wrap {
-    background-color: brown;
-}
+#wrap {}
 #wrap header {
     background-color: rgba(0,0,0,0.1);
     padding: 21px 80px;
     /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
     height: 80px;
-    
+    position: fixed; left:0; top:0; z-index:999;
+    width:100%;
 }
 #wrap header h1 {
-    background-color: aqua;
     float: left; padding-top: 3px;
 }
 #wrap header h1 a {}
 #wrap header h1 a img{
 }
 #wrap header nav {
-    background-color: coral;
     float:right;
 }
 #wrap header nav ul {
@@ -42,56 +39,238 @@
 }
 /* =====================메인 1~4행 공통선택자 */
 #wrap main {
-    background-color: lime;
 }
-#wrap main .container {background-color: beige;}
+#wrap main .container {}
 #wrap main .container .contents {
-    background-color: hotpink;
+    width: 1440px; height: 100vh;
+    margin:0 auto;
 }
 #wrap main .container .contents .text {
-    background-color: aqua;
 }
 #wrap main .container .contents .text h1 {}
 #wrap main .container .contents .text h1 span {}
-#wrap main .container .contents .text p {}
+#wrap main .container .contents .text h1+p {}
+/* 메인 2행 */
+/* 메인 2행 왼쪽 페이지*/
+#wrap main .container .contents {}
+#wrap main .container .contents .txt {
+    color: #fff;
+    padding-top: 331px;
+}
+#wrap main .container .contents .txt .sub_title {
+    font-size: 1.5625rem;
+    font-weight: 600;
+    letter-spacing: 0.02;
+}
+#wrap main .container .contents .txt span {}
+#wrap main .container .contents .txt h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+#wrap main .container .contents .txt p {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    letter-spacing: 0.02;
+    line-height: 1.5;
+}
+/* 메인 2행 오른쪽 페이지 */
+#wrap main .container .contents .right_contents {
+    margin-top: 157px;
+    width: 684px; height: 663px;
+}
+#wrap main .container .contents .right_contents .card_container {
+    background-size:contain;
+    width: 331px; height: 509px;
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+}
+#wrap main .container .contents .right_contents .card_container .card {
+    background-color: #fff;
+    margin-top: 200px;
+    width:331px; height: 309px;
+    padding: 30px 20px 0px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#wrap main .container .contents .right_contents .card_container .card h2 {
+    font-size: 1.5625rem;
+    font-weight: 600;
+    letter-spacing: 0.02;
+}
+#wrap main .container .contents .right_contents .card_container .card p {
+    margin-top: 35px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    color: #555555;
+}
+#wrap main .container .contents .right_contents .card_container .card .line {
+    border-top: 2px solid #000;
+    position: relative; top: 35px;
+    padding-top: 10px;
+}
+#wrap main .container .contents .right_contents .card_container .card .line a {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.02;
+    line-height: 1.5;
+}
+#wrap main .container .contents .right_contents .card_container .card .line a img {
+    float:right;
+}
+#wrap main .container .contents .right_contents .card_container .card .line a span {
+
+}
+#wrap main .container .contents .right_contents .account_container {
+    background-size:contain;
+    width: 331px; height: 509px;
+    display: inline-block;
+    position: relative; top: 154px; left: 19px;
+    border-radius: 25px;
+} 
+#wrap main .container .contents .right_contents .account_container .account {
+    background-color: #fff;
+    margin-top: 200px;
+    width:331px; height: 309px;
+    padding: 30px 20px 0px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#wrap main .container .contents .right_contents .account_container .account h2 {
+    font-size: 1.5625rem;
+    font-weight: 600;
+    letter-spacing: 0.02;
+}
+#wrap main .container .contents .right_contents .account_container .account p {
+    margin-top: 35px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    color: #555555;
+
+}
+#wrap main .container .contents .right_contents .account_container .line {
+    border-top: 2px solid #000;
+    position: relative; top: 35px;
+    padding-top: 10px;
+}
+#wrap main .container .contents .right_contents .account_container .line a {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.02;
+    line-height: 1.5;
+}
+#wrap main .container .contents .right_contents .account_container .line img {
+    float:right;
+}
+#wrap main .container .contents .right_contents .account_container .line span {
+}
 /* =====================메인 1행 결제편리함 */
 #wrap main .pay {
     background-image: url(../images/row1.jpg);
+    background-size: cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .contents .text {}
-#wrap main .pay .contents .text > h1 {
-    margin: 231px 0 0 240px;
-    line-height: 1.3;
+#wrap main .pay .contents {position: relative;}
+#wrap main .pay .contents .text {
+    padding-top: 231px;
 }
+#wrap main .pay .contents .text >h1 {}
 #wrap main .pay .contents .text h1 {
-    font-weight: 700; font-size: 4.375rem;
+    font-weight: 700; font-size: 4.375rem; line-height: 1.3;
     color: #fff;
 }
 #wrap main .pay .contents .text h1 span {
     font-weight: 700; font-size: 4.375rem;
     color: #5EE1FF;
 }
-#wrap main .pay .contents .text p {
-    font-size: 1.5625rem; font-weight: 500;
-    margin: 20px 0 0 231px;
-    line-height: 1.5;
+#wrap main .pay .contents .text h1+p {
+    font-size: 1.5625rem; font-weight: 500; line-height: 1.5;
+    letter-spacing: -0.02em;
     color: #fff; 
+    margin: 20px 0;
 }
-#wrap main .pay .contents .text .bnr_btn_wrap {
-    background-color: purple;
-}
+#wrap main .pay .contents .text .bnr_btn_wrap 
+#wrap main .pay .contents .text .bnr_btn_wrap > * {margin-right: 10px;}
 #wrap main .pay .contents .text .bnr_btn_wrap .left {}
 #wrap main .pay .contents .text .bnr_btn_wrap .left img {}
-#wrap main .pay .contents .text .bnr_btn_wrap progress {}
-#wrap main .pay .contents .text .bnr_btn_wrap progress img{}
-#wrap main .pay .contents .text .bnr_btn_wrap .pause {}
+#wrap main .pay .contents .text .bnr_btn_wrap .progress {
+    display:inline-block;
+    width:100px; height: 2px;
+    background-color: rgba(255,255,255,0.3);
+    position: relative; bottom: 12px;
+}
+#wrap main .pay .contents .text .bnr_btn_wrap .progress:nth-child(4) {
+    background-color:rgba(255,255,255,1)
+}
+#wrap main .pay .contents .text .bnr_btn_wrap .pause {margin-right: 10px;}
 #wrap main .pay .contents .text .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .text .bnr_btn_wrap .next {}
 #wrap main .pay .contents .text .bnr_btn_wrap .next img{}
 #wrap main .pay .contents .scroll {
-    background-color: brown;
+    position: absolute;
+    right:0; bottom:43px;
 }
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.3; font-family: 500; font-size: 0.88rem;
+    position: relative; top:6px; right:10px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display: inline-block;
+    width: 12px; height: 30px;
+    background-color: #555555;
+    border-radius: 6px;
+}
+
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    background-color: #fff;
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    position: relative; top: -5px; left: 2px
+}
+/* 메인 2행 신한은행 PG란? */
+/* 메인 2행 왼쪽 페이지*/
+#wrap main .service {
+    background-size: cover;
+    background-image:url(../images/row2.jpg);
+    position: relative;
+}
+#wrap main .service .contents {}
+#wrap main .service .contents .txt {
+    float: left;
+}
+#wrap main .service .contents .txt .sub_title {}
+#wrap main .service .contents .txt span {}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .txt p {}
+/* 메인 2행 오른쪽 페이지 */
+#wrap main .service .contents .right_contents {
+    float: right;
+}
+#wrap main .service .contents .right_contents .card_container {
+    background-image: url(../images/card_bg1.jpg);
+}
+#wrap main .service .contents .right_contents .card_container .card {}
+#wrap main .service .contents .right_contents .card_container .card h2 {}
+#wrap main .service .contents .right_contents .card_container .card p {}
+#wrap main .service .contents .right_contents .card_container .card  {}
+#wrap main .service .contents .right_contents .card_container .card  a {}
+#wrap main .service .contents .right_contents .card_container .card  a img {}
+#wrap main .service .contents .right_contents .card_container .card  a span {}
+#wrap main .service .contents .right_contents .account_container {
+    background-image: url(../images/card_bg2.jpg);
+} 
+#wrap main .service .contents .right_contents .account_container .account {}
+#wrap main .service .contents .right_contents .account_container .account h2 {}
+#wrap main .service .contents .right_contents .account_container .account p {}
+#wrap main .service .contents .right_contents .account_container {}
+#wrap main .service .contents .right_contents .account_container a {}
+#wrap main .service .contents .right_contents .account_container img {}
+#wrap main .service .contents .right_contents .account_container span {}
