@@ -1,0 +1,183 @@
+body {background-color: #222;}
+main{
+    background-color: f222;
+    width: 500px;
+    /* 부모의 너비값 고정이 되어있을 경우 그 자식, 자손 중
+    블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로
+    크기를 인식하기 때문에 꼭 필요한 경우가 아니라면
+    너비를 입력하지 않아도 된다. */
+    margin: 97px auto;
+}
+main h1{
+    text-align: center; 
+    margin: 0 0 87px;
+}
+main h1 a{}
+main h1 a img{}
+main .tab_menu{
+    text-align: center;
+    margin-bottom: 55px;
+}
+main .tab_menu .active{border-bottom: 3px solid #1ed760;
+}
+main .tab_menu a{
+    display: inline-block;
+    padding: 5px 10px; color: #fff;
+    font-size: 1.25rem; letter-spacing: 0.02em;
+}
+/* first-child, last-child */
+main .tab_menu a:first-child{margin-right: 136px;}
+main .tab_wrap {}
+main .tab_wrap #inFrm{}
+main .tab_wrap #inFrm ul{
+    text-align: center;
+    width: 100%;
+}
+main .tab_wrap #inFrm ul li{
+
+}
+main .tab_wrap #inFrm ul li input{}
+main .tab_wrap #inFrm ul li input::placeholder {color: #aaa;}
+main .tab_wrap #inFrm ul li input[name$=name]{
+    background-color: #FFFFFF;
+    padding: 25px 40px;
+    width: 100%;
+    border-radius: 36.5px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+main .tab_wrap #inFrm ul li input[name$=pw]{
+    background-color: #FFFFFF;
+    padding: 25px 40px;
+    width: 100%;
+    border-radius: 36.5px;
+    margin-top: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+main .tab_wrap #inFrm .stay_in{
+    
+    margin: 0 0 33px;
+    padding-top: 32px;
+}
+main .tab_wrap #inFrm .stay_in #stay_on{
+/* HTML checkbox, radio는 css에서 세부디자인이 불가능하기 때문에 reset에서 apearance:none으로 숨겨놓고 포토샵, 피그마 등을 이용한 별도의
+아이콘 디자인을 준비한 후 background-image로 연결해야한다.
+숨겨놓은 checkbox, radio는 그 대상과 연결한 label을 통해 선택이 가능하게ㅔ 하고 배경이미지 또한 label에 대부분 선언해준다. */
+/* 상태선택자(a, form에서 주로 사용) */
+}
+main .tab_wrap #inFrm .stay_in #stay_on:checked+label {
+    background-image: url(../images/check_y.png) ;
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    background-position: 0 4px;
+}
+main .tab_wrap #inFrm .stay_in label{
+    color: #fff;
+    background-image: url(../images/check_n.png) ;
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    background-position: 0 4px;
+}
+main .tab_wrap #inFrm .btn{
+    background-color: #1ED760;
+    width: 100%;
+    border-radius: 36.5px;
+    margin-top: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding: 25px 0;
+}
+main .tab_wrap #inFrm .btn .sign_in_btn{
+    font-weight: 700;
+    color: #fff;
+}
+main .tab_wrap #inFrm .btn .sign_in_btn{
+    font-weight: 700;
+    color: #fff;
+}
+main .tab_wrap #inFrm .forget_pw{
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 14px 0;
+    display: block;
+}
+/* sign up 클릭 시 나오는 내용 스타일 */
+/* main .tab_wrap #upFrm {display: none;} */
+main .tab_wrap #inFrm {display: none;}
+
+main .tab_wrap #upFrm .sign_up {background-color: aqua;}
+main .tab_wrap #upFrm .sign_up h2{
+    background-color: blue;
+    padding-left: 21px;
+    font-size: 1.25rem;
+    font-weight: 400; letter-spacing: -0.02em;
+} /* 제목 텍스트 */
+main .tab_wrap #upFrm .sign_up .user_name_container {background-color: red; padding-top: 9px;}
+main .tab_wrap #upFrm .sign_up .user_name_container .user_name {
+    background-color: #fff;
+    width: 342px; height: 73px;
+    padding: 25px 40px;
+    float: left;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .user_name_container .check_btn {
+    background: #1ED760; 
+    width: 143px; height: 73px;
+    text-align: center;
+    padding: 29px 48px;
+    float: right;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .user_name_container .check_btn button {
+    color: #fff;
+    font-weight: 600;
+}
+main .tab_wrap #upFrm .sign_up .info_text {
+    background-color: pink; color: #1ED760;
+    padding: 8px 0 20px 0;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    word-spacing: -0.02em;
+    text-align: center;
+    width: 100%;
+} /* 설명텍스트 */
+main .tab_wrap #upFrm .sign_up .user_name_container {}
+main .tab_wrap #upFrm .sign_up .user_name_container .user_email {}
+main .tab_wrap #upFrm .sign_up .pw_container{}
+main .tab_wrap #upFrm .sign_up .pw_container .pw_one{
+    background-color: #fff;
+    margin-top: 9px;
+    width: 100%; height: 73px;
+    padding: 25px 0 0 40px;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .pw_container .pw_verify{
+    background-color: #fff;
+    margin-top: 18px;
+    width: 100%; height: 73px;
+    padding: 25px 0 0 40px;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .user_email_container{background-color: red;}
+main .tab_wrap #upFrm .sign_up .user_email_container .user_email{
+    background-color: pink;
+    width: 222px; height: 73px;
+    float: left;
+    padding: 25px 0 0 40px;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .user_email_container p{
+    background-color: coral;
+    float: left;
+}
+main .tab_wrap #upFrm .sign_up .user_email_container .email_select{
+    background-color: purple;
+    width: 222px; height: 73px;
+    float: right;
+    padding: 25px 0 0 40px;
+    border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .sign_up .user_email_container .email_select .email{}

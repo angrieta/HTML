@@ -1,0 +1,83 @@
+#wrap {
+    padding-top: 104px;
+    margin:0 auto;
+    width: 500px;
+}
+#wrap h1 {
+    font-size: 4.375rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    padding: 25px 0;
+}
+#wrap > p {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: -0.02;
+}
+#wrap form {
+    margin-top: 57px;
+}
+#wrap form fieldset {}
+#wrap form fieldset {}
+#wrap form fieldset dl {}
+#wrap form fieldset dl dt {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.02;
+}
+#wrap form fieldset dl dd {
+}
+#wrap form fieldset dl dd .user_id {
+    border: 1px solid #aaa;
+    width: 100%; 
+    margin: 18px 0 38px 0;
+    border-radius: 10px;
+    letter-spacing: -0.02em;
+    padding: 15px;
+}
+#wrap form fieldset dl dd .user_pw {
+    padding: 15px;
+    border: 1px solid #aaa;
+    width: 100%;
+    margin: 18px 0 38px 0;
+    border-radius: 10px;
+    letter-spacing: -0.02em;
+}
+#wrap form fieldset h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+#wrap form fieldset .btn_group {
+    text-align: center;
+}
+#wrap form fieldset .btn_group .login_btn {
+    margin-top: 32px;
+    background-color: #222222;
+    width: 100%; height: 53px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+#wrap form fieldset .btn_group .google_login {
+
+    width: 100%; height: 53px;
+    margin-top: 18px;
+    font-weight: 700;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    letter-spacing: -0.02;
+}
+#wrap form fieldset p {
+    width: 100%;
+    text-align: center;
+    margin-top: 62px;
+    font-weight: 400;
+    letter-spacing: -0.02;
+    color: #555555;
+}
+#wrap form fieldset p a {
+    font-weight: 700;
+    letter-spacing: -0.02;
+}

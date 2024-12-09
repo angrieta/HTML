@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset_w.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <style>
+        /* 속성선택자연습용(주로 input에서 많이 사용) */
+        /* input[name$=user] {background-color: aqua;} */
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/g12.png" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" class="active">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username"></li>
+                    <li><input type="password" name="user_pw" placeholder="Password"></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget Password ?</a>
+            </form>
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="upFrm">
+                <div class="sign_up">
+                    <h2>User name</h2>
+                    <div class="user_name_container">
+                        <p class="user_name"><input type="text" name="user_name" placeholder="ID to use"></p>
+                        <p class="check_btn"><button type="button">Check</button></p>
+                    </div>
+                    <p class="info_text">4~12 characters/English lowercase letters (possible to combine numbers)</p>
+                    <h2>Password</h2>
+                    <div class="pw_container">
+                        <p class="pw_one"><input type="password" name="user_pw" placeholder="Password"></p>
+                        <p class="pw_verify"><input type="password" name="user_pw" placeholder="verify password"></p>
+                    </div>
+                    <p class="info_text">
+                        lease enter 8 to 20 characters using at least two of the following: uppercase 
+                        and lowercase English letters, numbers, and special characters.
+                    </p>
+                    <h2>Email</h2>
+                    <div class="user_email_container">
+                        <p class="user_email"><input type="text" name="user_email" placeholder="Email" size="10"></p>
+                        <p>@</p>
+                        <p class="email_select">
+                            <select name="email">
+                                <option value="none">select</option>
+                                <option value="naver">naver.com</option>
+                                <option value="gmail">gmail.com</option>
+                                <option value="daum">daum.net</option>
+                            </select>
+                        </p>
+                    </div>    
+                    <p class="info_text">
+                        Please enter your email address correctly.
+                        To protect your account more securely, please go to 
+                        [My Information > Edit Member Information] after
+                        signing up and proceed with email verification.
+                    </p>
+                    <div class="user_phone_container">
+                        <p class="user_phone_number"><input type="text" name="user_phone_number" placeholder="Phone number"></p>
+                        <p class="verify_btn"><button type="button" class="verify_btn">verify</button></p>
+                    </div>
+                    <p class="sign_in-btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                </div>
+            </form>    
+        </div>
+    </main>
+</body>
+</html>
