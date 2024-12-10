@@ -1,0 +1,33 @@
+main {}
+/* ======================================================로고 */
+main h1 {}
+main h1 a {}
+main h1 a img {}
+/* ======================================================간편로그인 */
+main .content_container {}
+main .content_container .sign_up {}
+main .content_container .sign_up h2 {}
+main .content_container .sign_up p {}
+main .content_container .sign_up a  {}
+main .content_container .sign_up a img  {}
+/* ======================================================이메일 영역  */
+main .content_container dl  {}
+main .content_container dl dt  {} /* dt 제목 공통라인 */
+main .content_container dl dd {}
+main .content_container dl .email_line  {}
+main .content_container dl .email_line .email_box  {}
+main .content_container dl .email_line .email_select_box  {}
+main .content_container dl .email_line .email_select_box option  {}
+main .content_container dl .email_line .email_select_box option  {}
+/* ======================================================비밀번호 영역  */
+main .content_container dl .pw_box {}
+main .content_container dl .recheck_pw_box {}
+/* ======================================================닉네임 영역  */
+main .content_container dl .nickname_box {}
+/* ======================================================약관동의 영역  */
+main .terms_area{}
+main .terms_area h3{}
+main .terms_area p{}
+main .terms_area .agree_all_btn{}
+main .terms_area .agree_all_btn #agree1{}
+main .terms_area .agree_all_btn label span{background-color: aqua;}

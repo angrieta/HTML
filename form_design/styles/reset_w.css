@@ -13,7 +13,7 @@ ol, li, ul {list-style: none;}
 a {color: #000; text-decoration: none;}
 button {cursor:pointer; background: none; border: 0;}
 input {border-radius: 0; border: 0; outline: none;}
-input [type=number]::webkit-inner-spin-button {
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance:none;
     appearance:none;
 }
