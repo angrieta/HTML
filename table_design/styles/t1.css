@@ -1,0 +1,49 @@
+main .book_contanier{
+    main{}
+    background-color: #F2F2F2;
+    margin: 206px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+main .book_contanier tr:first-child {
+    background-color: #FF0066; 
+}
+main .book_contanier tr:first-child th{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 20px 0;
+}
+main .book_contanier tr:nth-child(2),
+main .book_contanier tr:nth-child(3),
+main .book_contanier tr:nth-child(4),
+main .book_contanier tr:nth-child(5),
+main .book_contanier tr:nth-child(6){text-align: left;}
+main .book_contanier tr th:first-child{
+    font-weight: 500;
+    padding-left: 16px;
+}
+main .book_contanier tr td{
+    width: 100px;
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+main .book_contanier tr:first-child td{color: #fff;}
+
+main .book_contanier tr th:first-child{width: 250px; font-weight: 500;}
+main .book_contanier tr:first-child td{
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+main .book_contanier tr:nth-child(3){
+    border: 2px solid #FF0066;
+    color: #FF0066;
+}
+main .book_contanier tr:nth-child(3),
+main .book_contanier tr:nth-child(5){
+    background-color: #E8E8E8;
+    
+}

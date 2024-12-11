@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> <!-- 글꼴 -->
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/login.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo (1).png" type="image/x-icon">
@@ -17,15 +17,15 @@
             <div class="sign_up">
                 <h2>회원가입</h2>
                 <p>SNS계정으로 간편하게 회원가입</p>
-                <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
-                <a href="#"><img src="./images/kakao.png" alt="페이스북"></a>
-                <a href="#"><img src="./images/naver.png" alt="페이스북"></a>
+                    <a href="#" class="facebook"><img src="./images/facebook.png" alt="페이스북"></a>
+                    <a href="#" class="kakao"><img src="./images/kakao.png" alt="페이스북"></a>
+                    <a href="#" class="naver"><img src="./images/naver.png" alt="페이스북"></a>
             </div>
             <dl>
                 <dt>이메일</dt>
                 <dd class="email_line">
-                    <input type="email" name="user_email" placeholder="이메일" class="email_box" required >
-                    @
+                    <input type="email" name="user_email" placeholder="이메일" class="email_box" required>
+                    <em>@</em>
                     <select name="email_select" class="email_select_box">
                         <option value="none">선택해주세요</option>
                         <option value="naver">naver.com</option>
@@ -56,24 +56,24 @@
                     <input type="checkbox" name="agree_all" value="agree_on" id="agree1">
                     <label for="agree1">전체동의 <span>선택항목에 대한 동의 포함</span></label>
                 </p>
-                <p class="agree_14year_btn">    
-                    <input type="checkbox" name="agree_14year" value="agree_on" id="agree2">
+                <p class="agree_child">    
+                    <input type="checkbox" name="agree_child" value="agree_on" id="agree2">
                     <label for="agree2">만 14세 이상입니다<em>(필수)</em></label>
                 </p>
                 <p class="agree_terms">    
                     <input type="checkbox" name="agree_terms" value="agree_on" id="agree3">
                     <label for="agree3">이용약관<em>(필수)</em></label>
-                    <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관 설명"></a>
+                    <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                 </p>
                 <p class="agree_privacy">    
                     <input type="checkbox" name="agree_privacy" value="agree_on" id="agree4">
                     <label for="agree4">개인정보수집 및 이용동의<em>(필수)</em></label>
-                    <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관 설명"></a>
+                    <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                 </p>
                 <p class="agree_marketing">    
                     <input type="checkbox" name="agree_marketing" value="agree_on" id="agree5">
                     <label for="agree5">개인정보 마케팅 활용 동의<span>(선택)</span></label>
-                    <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관 설명"></a>
+                    <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                 </p>
                 <p class="agree_event">    
                     <input type="checkbox" name="agree_event" value="agree_on" id="agree6">
@@ -81,7 +81,7 @@
                 </p>
             </div>
             <a href="#"><p>회원가입하기</p></a>
-            <p>
+            <p class="login_c">
                 이미 아이디가 있으신가요?
                 <a href="#"><em>로그인</em></a>
             </p>
