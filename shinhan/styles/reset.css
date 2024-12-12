@@ -16,6 +16,7 @@ input {border-radius: 0; border: 0; outline: none;}
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance:none;
     appearance:none;
+    letter-spacing: 0.02em;
 }
 fieldset {border:0;}
 legend {display: none;}

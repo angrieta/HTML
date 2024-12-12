@@ -1,11 +1,12 @@
-main {background-color: #aaaaaa;}
+main {
+    margin: 0 80px;
+}
 /* ======================================================로고 */
-main h1 {}
+main h1 {margin-top: 21px;}
 main h1 a {}
 main h1 a img {}
 /* ======================================================간편로그인 */
 main .content_container {
-    background-color: aqua;
     width: 360px;
     margin: 76px auto;
 }
@@ -68,6 +69,8 @@ main .content_container dl .email_btn {
     border: 1px solid #ddd; border-radius: 3px;
 }
 /* ======================================================비밀번호 영역  */
+main .content_container dl input {}
+main .content_container dl input .email_box{}
 main .content_container dl input::placeholder{
     color: #BBBBBB; padding-left: 10px;
 }
@@ -92,74 +95,132 @@ main .content_container dl .nickname_box {
     border: 1px solid #ddd; border-radius: 3px;
 }
 /* ======================================================약관동의 통합  */
-main .content_container .terms_area{
-    margin-top: 22px;
-}
-main .content_container .terms_area p {
-    margin-left: 12.5px 0 17.5px 44px;
-
-}
-main .content_container .terms_area h3{
+main .content_container h3{
     padding : 22px 0 10px 0;
     font-size: 1.0625rem;
     font-weight: 500;
 }
-main .content_container .terms_area p{}
-/* ======================================================전체동의 영역  */
-main .content_container .terms_area .agree_all_btn{}
-main .content_container .terms_area .agree_all_btn label{
-    font-weight: 600;
+main .content_container .terms_area {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
 }
-main .content_container .terms_area .agree_all_btn label span{background-color: pink;}
+main .content_container .terms_area p {
+    padding: 14px 0;
+}
+main .content_container .terms_area p{    
+}
+main .content_container .terms_area p label{
+    background-image: url(../images/check_box_n.png);
+    background-repeat: no-repeat;
+    background-position: 1px;
+    font-size: 0.8125rem;
+    padding: 2px 0; margin: -2px 0;
+    
+}
+main .content_container .terms_area p label span,
+main .content_container .terms_area p label em{
+    font-size: 0.8125rem;
+    color: #3292FF;
+}
+main .content_container .terms_area p label span{ color: #777;}
+
+/* ======================================================전체동의 영역  */
+main .content_container .terms_area .agree_all_btn{
+    margin: 0 auto;
+    width: 340px;
+    border-bottom: 1px solid #eee;
+}
+main .content_container .terms_area .agree_all_btn label{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 34px;
+    position: relative; left: -14px;
+    margin: 10px;
+}
+main .content_container .terms_area .agree_all_btn label span{
+    color: #777;
+    margin-left: 4px; position: relative; bottom: 2px;
+}
 main .content_container .terms_area .agree_all_btn #agree1:checked+label{
     background-image: url(../images/check_box_y.png);
+    background-repeat: no-repeat;
+    
 }
 /* ======================================================14세이상 영역  */
 main .content_container .terms_area .agree_child{}
-main .content_container .terms_area .agree_child label{}
-main .content_container .terms_area .agree_child label em{background-color: aqua;}
+main .content_container .terms_area .agree_child label{
+    padding-left: 34px;
+    margin-left: 4px;
+}
+main .content_container .terms_area .agree_child label em{}
 main .content_container .terms_area .agree_child #agree2:checked+label{
     background-image: url(../images/check_box_y.png);
 }
 /* ======================================================이용약관 영역  */
 main .content_container .terms_area .agree_terms{}
-main .content_container .terms_area .agree_terms label{}
-main .content_container .terms_area .agree_terms label em{background-color: red;}
+main .content_container .terms_area .agree_terms label{
+    padding-left: 34px;
+    margin-left: 4px;
+}
+main .content_container .terms_area .agree_terms label em{}
 main .content_container .terms_area .agree_terms #agree3:checked+label{
     background-image: url(../images/check_box_y.png);
 }
-main .content_container .terms_area .agree_privacy a{}
-main .content_container .terms_area .agree_privacy a img{}
+main .content_container .terms_area .agree_terms a{}
+main .content_container .terms_area .agree_terms a img{float: right; margin-right: 10px}
 /* ======================================================개인정보 수집 동의  영역  */
 main .content_container .terms_area .agree_privacy{}
-main .content_container .terms_area .agree_privacy label{}
-main .content_container .terms_area .agree_privacy label em{background-color: blue;}
+main .content_container .terms_area .agree_privacy label{
+    padding-left: 34px;
+    margin-left: 4px;
+}
+main .content_container .terms_area .agree_privacy label em{}
 main .content_container .terms_area .agree_privacy #agree4:checked+label{
     background-image: url(../images/check_box_y.png);
 }
-main .content_container .terms_area .agree_marketing a{}
-main .content_container .terms_area .agree_marketing a img{}
+main .content_container .terms_area .agree_privacy a{}
+main .content_container .terms_area .agree_privacy a img{float: right; margin-right: 10px}
 /* ======================================================개인정보 마케팅 활용 동의  영역  */
 main .content_container .terms_area .agree_marketing{}
-main .content_container .terms_area .agree_marketing label{}
-main .content_container .terms_area .agree_marketing label span{background-color: coral;}
+main .content_container .terms_area .agree_marketing label{
+    padding-left: 34px;
+    margin-left: 4px;
+}
+main .content_container .terms_area .agree_marketing label span{}
 main .content_container .terms_area .agree_marketing #agree5:checked+label{
     background-image: url(../images/check_box_y.png);
 }
 main .content_container .terms_area .agree_marketing a{}
-main .content_container .terms_area .agree_marketing a img{}
+main .content_container .terms_area .agree_marketing a img{float: right; margin-right: 10px}
 /* ======================================================이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신  영역  */
 main .content_container .terms_area .agree_event{}
-main .content_container .terms_area .agree_event label{}
-main .content_container .terms_area .agree_event label span{background-color: mediumturquoise;}
-main .content_container.terms_area .agree_event #agree6:checked+label{
+main .content_container .terms_area .agree_event label{
+    padding-left: 34px;
+    margin-left: 4px;
+}
+main .content_container .terms_area .agree_event label span{}
+main .content_container .terms_area .agree_event #agree6:checked+label{
     background-image: url(../images/check_box_y.png);
 }
 /* ======================================================회원가입 영역  */
-main .content_container a {}
-main .content_container a p {}
+main .content_container a {
+}
+main .content_container a p {
+    width: 100%;
+    background-color: #3292FF; color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 0;
+    margin: 37px 0 22px 0;
+}
 
 /* ======================================================이미 아이디가 있으신가요? 영역  */
-main .content_container .login_container {}
-main .content_container .login_container a{}
-main .content_container .login_container a em{}
+main .content_container .login_c {
+    width: 100%;
+    text-align: center;
+}
+main .content_container .login_c a{}
+main .content_container .login_c a em{
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+}
