@@ -1,0 +1,232 @@
+/* header */
+header {
+}
+header .top{
+    background-color: #fff;
+    width: 100%; height: 127px;
+    padding: 0 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; right: 0; top:0;
+}
+header .top h1{
+    
+}
+header .top h1 a{ display: flex; align-items: center;}
+header .top h1 span{font-size:1.5rem; font-weight: 600; margin-left: 5px;}
+header .top h1 a img{}
+header .top nav {}
+header .top nav a{font-size: 1.1875rem; font-weight: 600; margin-right: 79px;}
+
+/* main */
+main{}
+main .main_bg{
+    margin-top: 127px;
+    background-image: url(../images/main.png);
+    width: 100%; height: 760px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .main_bg .title{}
+main .main_bg .title::after {
+    content: ''; display: block; width: 200px; height: 1px; background-color: #fff;
+    position:relative; left: 170px; bottom: 100px;
+}
+main .main_bg .title {
+    padding-top: 200px;
+    font-size:3.75rem; font-weight: 600; color: #fff;
+    margin-bottom: 40px;
+}
+main .main_bg p{
+    font-size: 1.1875rem; font-weight: 500; color: #fff;
+    margin-bottom: 40px;
+}
+main .main_bg a{}
+main .main_bg .select{margin-bottom: 172px;}
+main .main_bg .select a{}
+main .main_bg .select a:nth-child(2){padding: 0 26px;}
+main .main_bg .select a img{
+    width: 8px; height: 8px;
+}
+main .main_bg .btn {
+    display: flex; flex-flow: row nowrap;
+}
+main .main_bg .btn > p{padding: 0 26px;}
+main .main_bg .btn > p:nth-child(2){padding: 0 26px;}
+main .main_bg .btn > p::after{
+    content: ''; display: block; background-color: #000; width: 8px; height: 8px; border-radius: 50%;
+}
+main .main_bg .btn > p:hover::after{background-color: #fff;}
+main .main_bg a {margin-top: 124px;}
+main .main_bg a img{
+    width: 60px; height: 60px;
+    }
+
+/* 메인 첫번째 라인 */
+main .main_contents{
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+main .main_contents h3{
+    font-size:1.25rem; font-weight: 400; color: #aaa;
+    padding: 140px 0 64px 0;
+}
+main .main_contents h2{
+    font-size:2.25rem; font-weight: 600; color: #464646;
+    padding-bottom: 25px;
+}
+main .main_contents p{
+    font-size:1.25rem; font-weight: 400; color: #464646;
+    padding-bottom: 100px;
+}
+main .main_contents p img{}
+/* sub 전체 */
+main .sub_contents{display: flex; flex-flow: column nowrap; 
+    width: 100%;
+    margin: 0 auto;
+}
+main .sub_contents div{}
+main .sub_contents div p{
+}
+main .sub_contents div p img{height: 100%; width: 100%;}
+main .sub_contents div .text {align-items: center; }
+main .sub_contents div .text .vibe::after{
+    content: ''; display: block; width: 50px; height: 2px; background-color: #000;
+    position:relative; bottom: -20px;
+}
+main .sub_contents div .text .vibe{font-size:1.5rem; font-weight: 500;}
+main .sub_contents div .text h2{font-size:3.75rem; font-weight: 700; padding-top: 55px;}
+main .sub_contents div .text .room_info{line-height: 1.7; padding-top: 65px;}
+main .sub_contents div .text .room_detail{line-height: 1.7; font-size:1.125rem; padding-top: 65px;}
+
+/* sub1 */
+main .sub_contents .sub1{
+    display: flex; flex-flow: row nowrap;
+    border-top: 1px solid #AAAAAA;
+}
+main .sub_contents .sub1 .text{
+    padding: 138px 0 0 99px;
+}
+main .sub_contents .sub1 .photo{}
+main .sub_contents .sub1 p img{}
+main .sub_contents .sub1 .vibe{}
+main .sub_contents .sub1 .h2{}
+main .sub_contents .sub1 .room_info{}
+main .sub_contents .sub1 .room_detail{}
+/* sub2 */
+main .sub_contents .sub2{
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between;
+}
+main .sub_contents .sub2 .text{
+    padding: 164px 82px 100px 340px;
+}
+main .sub_contents .sub2 .vibe{}
+main .sub_contents h2{}
+main .sub_contents .sub2 .room_info{}
+main .sub_contents .sub2 .room_detail{}
+main .sub_contents .sub2 .p {
+    display: flex;
+    justify-items: flex-end;
+}
+main .sub_contents .sub2 .p img {
+}
+/* sub3 */
+main .sub_contents .sub3{
+    display: flex; flex-flow: row nowrap;
+    border-bottom: 1px solid #AAAAAA;
+}
+main .sub_contents .sub3 .text{
+    padding: 138px 0 0 99px;
+}
+main .sub_contents .sub3 p{}
+main .sub_contents .sub3 p img{}
+main .sub_contents .sub3 .vibe{}
+main .sub_contents .sub3 .h2{}
+main .sub_contents .sub3 .room_info{}
+main .sub_contents .sub3 .room_detail{}
+
+
+
+/* 로케이션 지도 */
+main{}
+main .location {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 60px;
+}
+main .location h3::after {
+    content: ''; display: block; width: 50px; height: 3px; background-color: #000;
+    position: relative; left: 30px; top: 30px;
+}
+main .location h3{font-size: 1.4375rem; letter-spacing: 0.01em; color: #5C5C5C; padding-bottom: 64px;}
+main .location h2{font-size:2.25rem; letter-spacing: 0.01em; color: #464646; font-weight: 600; padding-bottom: 110px;}
+main .location p{}
+main .location p img{}
+main .location address{padding-bottom: 150px;
+}
+main .location address dl{display: flex; padding-top: 36px;}
+main .location address dl div:nth-child(2){padding: 0 69px;}
+main .location address dl div dt{margin-bottom: 60px;}
+main .location address dl div dt{font-size:2.5rem; font-weight: 600;}
+main .location address dl div dd{
+    font-size:2.25rem;
+    line-height: 1.7;
+    color: #5C5C5C
+}
+
+/* footer */
+footer{
+    background-color: #828282;
+    width: 100%; height: 198px;
+}
+footer .container{
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+footer .container h1{
+    align-self: center;
+}
+footer .container h1 a{
+    font-size:1.5rem;
+    font-weight: 600; 
+    color: #fff;
+    padding-right: 70px;
+    display: flex; align-items: center;
+}
+footer .container h1 a img{padding-right: 8px;}
+footer .container .right_content {display: flex; flex-flow: column;}
+footer .container .right_content .menu{
+    border-bottom: 1px solid #fff;
+    display: flex;
+}
+footer .container .right_content .menu a{
+    font-size:1rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #fff;
+    margin-right: 20px;
+}
+footer .container .right_content .menu a:first-child::after {display: none;}
+footer .container .right_content .menu a::after{
+    content: ''; display: block; width: 1px; height: 13px; background-color: #fff;
+    position: relative; bottom: 14px; left: -10px;
+}
+footer .container .right_content address{
+    padding-top: 14px;
+    font-size:1rem;
+    font-weight: 500; 
+    line-height: 1.4;
+    letter-spacing: -0.05em;
+    color: #fff;
+}
