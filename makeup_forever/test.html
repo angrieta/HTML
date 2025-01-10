@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메포 연습용</title>
+    <style>
+        main {}
+        main .slide_wrap{background-color: aqua; height: 650px; position: relative;}
+        main .slide_wrap .slide_container{ background-color: coral; height: 100%;}
+        main .slide_wrap .slide_container .slide{height: 100%;}
+        main .slide_wrap .slide_container .slide .contents{width: 45%; float: right; padding-top: 149px;}
+        main .slide_wrap .slide_container .slide .contents .title{}
+        main .slide_wrap .slide_container .slide .contents .title img{}
+        main .slide_wrap .slide_container .slide .contents .title .bnr_link{
+            background-color: brown; display: block; padding: 20px 0; width: 200px;
+            font-size:2rem;
+            font-weight: 700; text-align: center;
+            background-color: #111; color: #fff;
+            border-radius: 10px;
+            margin-top: 66px;
+        }
+        /* silde 1 */
+        main .slide_wrap .slide_container .slide1{
+            background-image: url(./images/ban1.png);
+            display: none;
+        }
+        main .slide_wrap .slide_container .slide1 .contents{}
+        main .slide_wrap .slide_container .slide1 .contents .title{}
+        main .slide_wrap .slide_container .slide1 .contents .title img{}
+        main .slide_wrap .slide_container .slide1 .contents .title a{}
+        /* slide 2 */
+        main .slide_wrap .slide_container .slide2{
+            background-image: url(./images/ban2.png);
+            padding-left: 435px;
+        }
+        main .slide_wrap .slide_container .slide2 .contents{
+            float: none;
+        }
+        main .slide_wrap .slide_container .slide2 .contents .title{}
+        main .slide_wrap .slide_container .slide2 .contents .title img{}
+        main .slide_wrap .slide_container .slide2 .contents .title .bnr_link{}
+        /* 이전 다음버튼 */
+        main .slide_wrap .bnr_left_arrow, main .slide_wrap .bnr_right_arrow {
+            position:absolute; top:50%
+        }
+        main .slide_wrap .bnr_left_arrow{left: 186px;}
+        main .slide_wrap .bnr_left_arrow img{}
+        main .slide_wrap .bnr_right_arrow{right: 186px;} 
+        main .slide_wrap .bnr_right_arrow img{}
+        /* 스크롤 바 */
+        main .slide_wrap .scroll_bg{
+            width: 1400px; background-color: #ccc; height: 2px;
+            position:absolute; left: 256px; bottom: 36px;
+        }
+        main .slide_wrap .scroll_bg .scrollbar{
+            width: 200px; height: 100%; background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slide_wrap">
+            <div class="slide_container">
+                <div class="slide slide1">
+                    <!-- 사진bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/ban1_text.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/ban2_text.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--배너 이전,다음 버튼 -->
+            <a href="#" class="bnr_left_arrow"><img src="./images/bnr_left_arrow.png" alt="이전 광고보기"></a>
+            <a href="#" class="bnr_right_arrow"><img src="./images/bnr_right_arrow.png" alt="다음 광고보기"></a>
+            <!-- 배너 상태 스크롤 바  -->
+             <div class="scroll_bg">
+                <div class="scrollbar"></div>
+             </div>
+        </div>
+    </main>    
+</body>
+</html>

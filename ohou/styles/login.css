@@ -135,7 +135,7 @@ main .content_container .terms_area .agree_all_btn label{
     font-weight: 600;
     padding-left: 34px;
     position: relative; left: -14px;
-    margin: 10px;
+    margin: 10px
 }
 main .content_container .terms_area .agree_all_btn label span{
     color: #777;
@@ -144,7 +144,7 @@ main .content_container .terms_area .agree_all_btn label span{
 main .content_container .terms_area .agree_all_btn #agree1:checked+label{
     background-image: url(../images/check_box_y.png);
     background-repeat: no-repeat;
-    
+
 }
 /* ======================================================14세이상 영역  */
 main .content_container .terms_area .agree_child{}

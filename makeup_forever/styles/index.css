@@ -1,0 +1,341 @@
+/* header 공통값 */
+.h_bg header * {color: #fff;}
+/* ==================================header */
+.h_bg {background-color: #111; position: relative;}
+.h_bg header{
+    margin: 0 auto;
+    max-width: 1400px; height: 125px;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+.h_bg header h1{}
+.h_bg header h1 a{}
+.h_bg header h1 a img{}
+.h_bg header .h_right{
+    width: calc(100% - 150px); 
+    padding-left: 20px;
+}
+.h_bg header .h_right .h_top{display: flex; justify-content: end; margin-bottom: 20px; align-items: center;}
+.h_bg header .h_right .h_top .search{margin-right: 26px;}
+.h_bg header .h_right .h_top .search a img{position: relative; top: 3px;}
+.h_bg header .h_right .h_top .search .m_all_menu{display: none;} /* ------------------------------------------모바일 전체버튼  숨기기 */
+.h_bg header .h_right .h_top > a{margin-right: 26px; font-size:0.875rem; font-family: 500; letter-spacing: -0.02em;}
+.h_bg header .h_right .h_top > a:last-child{margin-right: 0px;}
+.h_bg header .h_right .h_top > a img{}
+/* ==================================header 검색팝업(S) */
+.h_bg header .h_right .h_top .search .search_popup{
+    /* 초기 숨기기(검색 아이콘 클릭 시에만 출력 대상 */
+    display: none;
+    background-color: #111;
+    border: 1px solid #fff;
+    position: fixed; right: 0; top: 0;
+    height: 100vh; width: 350px;
+    padding: 20px;
+/*     display: flex; flex-flow: column nowrap; 숨기기 풀면 주석 풀기 */ 
+}
+.h_bg header .h_right .h_top .search .search_popup .close_btn{display: flex; justify-content: end;}
+.h_bg header .h_right .h_top .search .search_popup .close_btn img{}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm{
+    margin-top: 50px;
+    display: flex;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 7px;
+    justify-content: space-between;
+}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input::placeholder{ background-color: #111; color: #aaa;}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input[name$=search]{background-color: #111;  background: none; width: calc(100% - 25px)}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm #search_btn img{
+    position: relative; top: 4px;
+}
+.h_bg header .h_right .h_top .search .search_popup h2{
+    margin-top: 50px;
+    font-size:1.125rem; letter-spacing: -0.02em; font-weight: 500;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list{
+    margin-top: 50px;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li:hover{background-color: #fff;  }
+.h_bg header .h_right .h_top .search .search_popup .search_list li{
+    margin-top: 14px; 
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li:hover .num,
+.h_bg header .h_right .h_top .search .search_popup .search_list li:hover .keywords{color: #000;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .num{margin-right: 22px; font-size: 0.9375rem; letter-spacing: -0.02%;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .keywords{font-size: 0.9375rem; letter-spacing: -0.02%}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating{float: right;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating img{}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend{
+    margin-top: 50px;display: flex; flex-flow: row wrap;
+}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend a:nth-child(3){margin-right: 0px;}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend a:hover{background-color: #fff; color: #111;}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend a{
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin: 0 7px 7px 0;
+    font-size:0.875rem; font-family: 500; letter-spacing: -0.02em;
+}
+/* ==================================header 검색팝업(E) */
+.h_bg header .h_right .h_btm{display: flex; justify-content: space-between; }
+.h_bg header .h_right .h_btm .h_b_left{}
+.h_bg header .h_right .h_btm .h_b_left a{
+    margin-right: 26px;
+    font-size:1.25rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_btm nav{}
+.h_bg header .h_right .h_btm nav > a{
+    margin-left: 26px;
+    font-size:1.25rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_btm .h_b_right{}
+/* ==================================header 서브(S) */
+.h_bg header .h_right .h_btm nav .sub_bg {
+    /* display: none; */
+    display: none;
+    border: 4px solid red; background-color: #111;
+    position:absolute; left:0; top:125px; width: 100%; height: 240px;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
+    margin: 0 auto; max-width:1400px;
+    display: flex;
+    padding: 40px 0 0 20px;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 {padding-left: 20px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active {border-bottom: 1px solid #fff;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li:hover {border-bottom: 1px solid #fff;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li {margin-bottom: 15px; width: 200px; padding-bottom: 5px; }
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {display: block;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 {padding-left: 20px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub{}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li:hover {border-bottom: 1px solid #fff;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li {margin:0 0 15px 0px; width: 200px; padding-bottom: 5px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li a {display: block;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 {display: none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 {display: none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li a {}
+/* ==================================header 서브(E) */
+.h_bg header .h_right .h_top .search {}
+.h_bg header .h_right .h_top .search .m_nav {
+    position: fixed; left: 0; top: 126px; width: 100%; height: 800px;
+    z-index: 100; 
+    background-color: #fff;
+    padding: 40px 15px;
+    display: none; /* 가리기 */
+}
+.h_bg header .h_right .h_top .search .m_nav .login_menu{
+    background-color: coral;
+}
+.h_bg header .h_right .h_top .search .m_nav .login_menu a{padding-right: 10px;}
+.h_bg header .h_right .h_top .search .m_nav > ul{
+    background-color: #ccc;
+}
+.h_bg header .h_right .h_top .search .m_nav > ul > li{
+}
+.h_bg header .h_right .h_top .search .m_nav > ul > li:nth-child(5) > a{border-bottom: 0px;}
+.h_bg header .h_right .h_top .search .m_nav > ul > li > a{
+    background-color: #fff;
+    display: block; padding-top: 35px; padding-bottom: 10px;
+    border-bottom:1px solid #aaa ;
+    color: #000;
+}
+.h_bg header .h_right .h_top .search .m_nav > ul > li > .m_sub_menu{
+} 
+.h_bg header .h_right .h_top .search .m_nav > ul > li > .m_sub_menu li{display: flex; flex-flow: column nowrap; padding-top: px; border-top: 1px solid #000;} 
+.h_bg header .h_right .h_top .search .m_nav > ul > li > .m_sub_menu li a{
+    padding-bottom: 20px;
+    padding-top: 10px;
+} 
+/* ==================================main */
+main {}
+main .slides_wrap{
+    background-color: aqua; /* 광고 배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동높이 설정 시 높낮이가 배너에 따라 달라지는
+    불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야 하는 경우들이 많다. 그 외엔 자동 높이 설정 권장 */
+    width: 100%; height: 650px;
+    position: relative;
+}
+main .slides_wrap .slides_container{
+    background-color: lime; height: 100%;
+}
+main .slides_wrap .slides_container .slide{
+    height: 100%;
+}
+main .slides_wrap .slides_container .slide .contents {
+    max-width: 1400px; margin: 0 auto; overflow: hidden;
+}
+main .slides_wrap .slides_container .slide .contents .title{
+    width: 40%; float: right;
+    padding-top: 149px;
+}
+main .slides_wrap .slides_container .slide .contents .title img{}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size:2rem;
+    font-weight: 700;
+    margin-top: 66px;
+}
+main .slides_wrap .prev_btn, main .slides_wrap .next_btn{
+    background-color: yellow;
+    position:absolute; top: 50%; 
+}
+main .slides_wrap .prev_btn img, main .slide_wrap .next_btn img{}
+main .slides_wrap .prev_btn {left: 186px;}
+main .slides_wrap .prev_btn img{}
+main .slides_wrap .next_btn {right: 186px;}
+main .slides_wrap .next_btn img{}
+main .slides_wrap .scroll_bg {
+    background-color: #ccc;
+    max-width: 1400px; height: 2px;
+    position: absolute; left: 256px; bottom: 36px;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    background-color: #111;
+    width: 200px; height: 100%;
+}
+/* ==================================main 광고배너(개별 배너) */
+main .slides_wrap .slides_container .slide1{
+    background-image: url(../images/ban1.png);
+    display: none; /* 초기숨기기 */
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title{}
+main .slides_wrap .slides_container .slide1 .contents .title img{}
+main .slides_wrap .slides_container .slide1 .contents .title .bnr_link{}
+main .slides_wrap .slides_container .slide2{
+    background-image: url(../images/ban2.png);
+    
+}
+main .slides_wrap .slides_container .slide2 .contents {
+}
+main .slides_wrap .slides_container .slide2 .contents .title{
+    float: none;
+    padding-left: 180px;
+}
+main .slides_wrap .slides_container .slide2 .contents .title img{}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link{}
+
+/* ===============================================================2행 카테고리/추천상품 */
+main .category {
+    background-color: pink;
+    padding-top: 23px;
+}
+main .category .category_box {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+}
+main .category .category_box > a{
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 200px; height: 200px;
+    display: flex; flex-flow: column nowrap;
+}
+main .category .category_box > a img:first-child{padding-left: 27.5px;}
+main .category .category_box > a img{padding-right: 29px;}
+main .category .category_box > a span{
+    padding-top: 20px;
+    font-size:1.25rem; font-weight: 500;
+}
+main .suggest_contents {}
+main .suggest_contents h2 {background-color: coral; font-size:2.5rem; font-weight: 700; text-align: center; padding-top: 92px;}
+main .suggest_contents .suggest_box {background-color: aqua; display: flex; flex-flow:row nowrap; justify-content: space-between;}
+main .suggest_contents .suggest_box .best_box {background-color: yellow;}
+main .suggest_contents .suggest_box .best_box h3 {background-color: blue;}
+main .suggest_contents .suggest_box div div > a img  {width: 310px; height: 350px;} 
+main .suggest_contents .suggest_box .sug_content_box {display: flex;}
+main .suggest_contents .suggest_box .best_box .best_left {}
+main .suggest_contents .suggest_box .best_box .best_left > a {}
+main .suggest_contents .suggest_box .best_box .best_left > a img
+main .suggest_contents .suggest_box .best_box .best_left > a span {}
+main .suggest_contents .suggest_box .best_box .best_left .best_container {}
+main .suggest_contents .suggest_box .best_box .best_left .best_container p {}
+main .suggest_contents .suggest_box .best_box .best_left .best_container h4 {}
+main .suggest_contents .suggest_box .best_box .best_left .best_container em {}
+main .suggest_contents .suggest_box .best_box .best_right {}
+main .suggest_contents .suggest_box .best_box .best_right > a {}
+main .suggest_contents .suggest_box .best_box .best_right > a img {}
+main .suggest_contents .suggest_box .best_box .best_right > a span {}
+main .suggest_contents .suggest_box .best_box .best_right .best_container {}
+main .suggest_contents .suggest_box .best_box .best_right .best_container p {}
+main .suggest_contents .suggest_box .best_box .best_right .best_container h4 {}
+main .suggest_contents .suggest_box .best_box .best_right .best_container em {}
+main .suggest_contents .suggest_box .new_box {background-color: red; display: flex; flex-flow: row nowrap; }
+main .suggest_contents .suggest_box .new_box h3 {background-color: blue;}
+main .suggest_contents .suggest_box .new_box .new_right {}
+main .suggest_contents .suggest_box .new_box .new_right > a {}
+main .suggest_contents .suggest_box .new_box .new_right > a img {}
+main .suggest_contents .suggest_box .new_box .new_right > a span {}
+main .suggest_contents .suggest_box .new_box .new_right .new_container {}
+main .suggest_contents .suggest_box .new_box .new_right .new_container p {}
+main .suggest_contents .suggest_box .new_box .new_right .new_container h4 {}
+main .suggest_contents .suggest_box .new_box .new_right .new_container em {}
+/* ===============================================================3행 FACE BEST */
+main .face_best_wrap {
+    background-color: aqua;
+    max-width: 1400px; margin: 0 auto;
+}
+main .face_best_wrap .title{
+    background-color: lime;
+    display: flex;
+    justify-content: space-between; 
+    padding: 124px 0 45px 0;
+}
+main .face_best_wrap .title h2{
+    font-size:1.875rem; font-weight: 500;
+}
+main .face_best_wrap .title h2 .more{}
+main .face_best_wrap .contents{
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative; 
+}
+main .face_best_wrap .contents .label{
+    background-color: #fff;
+    display: inline-block;
+    padding: 3px 10px;
+    position: absolute; 
+}
+main .face_best_wrap .contents li{
+    background-color: orange;
+    width: calc((100% - (30px * 2)) / 3);
+}
+main .face_best_wrap .contents li .product{
+    position: relative; 
+}
+main .face_best_wrap .contents li .product .label{}
+main .face_best_wrap .contents li .product >a{}
+main .face_best_wrap .contents li .product >a img{width: 100%;}
+/* ==============================================s:2행 2행 상품 마우스 올렸을 시 출력 대상 */
+main .face_best_wrap .contents li .product .icon{
+    position: absolute; left: 0; bottom: 150px;
+    text-align: center; justify-content: center; width: 100%;
+    display: none; 
+}
+main .face_best_wrap .contents li .product:hover .icon{display: flex} 
+main .face_best_wrap .contents li .product .icon a:hover{opacity: 0.5;} 
+main .face_best_wrap .contents li .product .icon a:first-child{margin-right: 14px; } 
+main .face_best_wrap .contents li .product .icon a{
+    background-color: rgba(255, 255, 255, 0.6); width: 120px; height: 120px;  align-content: center;
+    border-radius: 60px; display: inline-block; 
+}
+main .face_best_wrap .contents li .product .icon a img{}
+/* ==============================================s:2행 2행 상품 마우스 올렸을 시 출력 대상 */
+main .face_best_wrap .contents li .txt{margin-top: 14px;}
+main .face_best_wrap .contents li .txt .category{}
+main .face_best_wrap .contents li .txt .category h3{}
+main .face_best_wrap .contents li .txt h3{font-size:1.25rem; font-weight: 500; margin-top: 9px;}
+main .face_best_wrap .contents li .txt .price{font-size:1.125rem; font-weight: 500; margin-top: 29px;}
+
