@@ -1,0 +1,29 @@
+.instagram {
+    max-width: 420px; margin: 30px auto 0;
+    background-color: #f1f1f1;
+}
+.instagram .profile {display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 10px;}
+.instagram .profile .user {display: flex; align-items: center;}
+.instagram .profile .user img {width: 24px; height: 24px; border-radius: 50%;}
+.instagram .profile .user span {padding-left: 4px;}
+.instagram .profile .more {}
+.instagram main {height: 500px; overflow: hidden;}
+.instagram main img {width: 100%;}
+.instagram .container {}
+.instagram .container .icon {display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 10px;}
+.instagram .container .icon .left {display: flex; align-items: center;}
+.instagram .container .icon .left a {width: 24px; margin-right: 6px;}
+.instagram .container .icon .left a img {width: 100%;}
+.instagram .container .icon .left .like {}
+.instagram .container .icon .left .comments {}
+.instagram .container .icon .left .paper {}
+.instagram .container .icon .left .like img {}
+.instagram .container .icon .left .comments img {}
+.instagram .container .icon .left .paper img {}
+.instagram .container .icon .interest {}
+.instagram .container .contents {padding: 10px;}
+.instagram .container .contents p {line-height: 1.7;}
+.instagram .container .contents .like_number {}
+.instagram .container .contents .user {}
+.instagram .container .contents .contents {font-weight: 700;}
+.instagram .container .contents .date {}
